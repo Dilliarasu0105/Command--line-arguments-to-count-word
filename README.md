@@ -6,21 +6,33 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-
+Import sys module to use command line arguments.
 ### Step 2: 
- 
+reate a file pointer and open the file which is passed in command line.
 ### Step 3: 
-
+nitialize word count as zero.
 ### Step 4:  
-
+For each line in file, split it into words and find number of the words in every line.
 ### Step 5: 
-
+Sum the number of words in each line.
 ### Step 6: 
-
+Display the total words in the file.
 ## PROGRAM:
-
+```
+Developed by:Dilliarasu M
+Register no: 212223230049
+import sys
+fp=open(sys.argv[1])
+wordcount=0
+for i in fp:
+    words=i.split()
+    wordcount+=len(words)
+print("Total no of words in file is",wordcount)
+fp.close()
+```
 ### OUTPUT:
 
+![image](https://github.com/Dilliarasu0105/Command--line-arguments-to-count-word/assets/144979593/e25427db-9561-4bd4-98d3-7879ff13a6f4)
 
 
 ## RESULT:
